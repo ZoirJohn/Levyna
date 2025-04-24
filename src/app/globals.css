@@ -9,6 +9,8 @@
         --color-background: var(--background);
         --color-foreground: var(--foreground);
         --font-sans: var(--poppins);
+        --spacing-container: 1300px;
+        --color-highlight: #f26440;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +19,8 @@
                 --foreground: #ededed;
         }
 }
-
+.wrapper {
+        @apply max-w-container px-1 w-full mx-auto;
+}
 body {
 }
