@@ -12,7 +12,7 @@ const Header = () => {
                                         <Image src='/logo.png' alt='logo' width={125} height={36} priority />
                                 </Link>
                                 <nav className='mx-auto'>
-                                        <ul className='flex gap-x-10'>
+                                        <ul className='flex gap-x-10 max-lg:gap-x-5 max-lg:text-base'>
                                                 <li>
                                                         <Link href='/' className={`${pathname == '/' && 'text-highlight'}`}>
                                                                 Home
@@ -40,7 +40,10 @@ const Header = () => {
                                                 </li>
                                         </ul>
                                 </nav>
-                                <Link href='/Service' className='py-4 px-5 bg-highlight text-white font-semibold hover:opacity-9        0 transition-all'>Consultation</Link>
+                                <Link href='/Service' className='py-4 px-5 bg-highlight text-white font-semibold hover:opacity-90 transition-all'>
+                                        Consultation
+                                </Link>
+                                <span className='md:hidden relative w-8 ml-4'></span>
                         </div>
                 </header>
         )

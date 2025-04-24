@@ -11,6 +11,7 @@
         --font-sans: var(--poppins);
         --spacing-container: 1300px;
         --color-highlight: #f26440;
+        --color-chinese: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +24,9 @@
         @apply max-w-container px-1 w-full mx-auto;
 }
 body {
+        color: var(--color-chinese);
+        font-size: var(--text-lg);
+}
+h2 {
+        font-size: 3rem;
 }
