@@ -15,17 +15,17 @@ const Header = () => {
                 isOpen ? document.documentElement.classList.add('lock') : document.documentElement.classList.remove('lock')
         }, [isOpen])
         return (
-                <header className={`fixed w-full py-6 top-0 ${scroll && 'bg-aqua'} z-10 max-md:before:absolute before:w-full before:h-full before:bg-aqua before:z-10 before:top-0`}>
+                <header className={`fixed w-full py-6 top-0 ${scroll && 'bg-aqua'} z-20 max-md:before:absolute before:w-full before:h-full before:bg-aqua before:z-20 before:top-0`}>
                         <div className='wrapper flex items-center'>
-                                <Link href='/' className='z-20'>
+                                <Link href='/' className='z-50'>
                                         <Image src='/logo.png' alt='logo' width={125} height={36} priority />
                                 </Link>
                                 <nav
-                                        className={`mx-auto max-md:absolute max-md:bg-myrtle max-md:w-full max-md:h-screen max-md:top-0 max-md:left-0 max-md:-translate-y-full transition duration-500 md:z-20 ${
+                                        className={`mx-auto max-md:absolute max-md:bg-myrtle max-md:w-full max-md:h-screen max-md:top-0 max-md:left-0 max-md:-translate-y-full transition duration-500 z-10 ${
                                                 isOpen ? 'max-md:translate-y-0' : ''
                                         }`}
                                 >
-                                        <ul className='flex gap-x-10 max-lg:gap-x-5 max-lg:text-base max-md:flex-col max-md:text-white max-md:pt-27 max-md:text-3xl max-md:gap-6 max-md:justify-center max-md:items-center max-md:h-screen max-md:h-full overflow-y-scroll'>
+                                        <ul className='flex gap-x-10 max-lg:gap-x-5 max-lg:text-base max-md:flex-col max-md:text-white max-md:pt-27 max-md:text-3xl max-md:gap-6 max-md:justify-center max-md:items-center max-md:h-screen overflow-y-scroll'>
                                                 <li>
                                                         <Link href='/' className={`${pathname == '/' && 'text-highlight'}`}>
                                                                 Home
