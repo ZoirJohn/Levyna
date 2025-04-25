@@ -29,12 +29,21 @@ html.lock {
 .wrapper {
         @apply max-w-container px-1 w-full mx-auto;
 }
+.description {
+        @apply opacity-50 leading-11;
+}
 body {
         color: var(--color-chinese);
         font-size: var(--text-lg);
 }
 h2 {
         font-size: 3rem;
+}
+h3 {
+        font-size: 2.25rem;
+}
+h4 {
+        font-size: 1.5rem;
 }
 @media (max-width: 425px) {
         h2 {

@@ -25,7 +25,7 @@ const Header = () => {
                                                 isOpen ? 'max-md:translate-y-0' : ''
                                         }`}
                                 >
-                                        <ul className='flex gap-x-10 max-lg:gap-x-5 max-lg:text-base max-md:flex-col max-md:text-white max-md:pt-27 max-md:text-3xl max-md:gap-6 max-md:justify-center max-md:items-center max-md:h-screen overflow-y-scroll'>
+                                        <ul className='flex gap-x-10 max-lg:gap-x-5 max-lg:text-base max-md:flex-col max-md:text-white max-md:pt-27 max-md:text-3xl max-md:gap-6 max-md:justify-center max-md:items-center max-md:h-screen max-md:overflow-y-scroll'>
                                                 <li>
                                                         <Link href='/' className={`${pathname == '/' && 'text-highlight'}`}>
                                                                 Home
