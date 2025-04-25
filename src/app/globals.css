@@ -10,8 +10,11 @@
         --color-foreground: var(--foreground);
         --font-sans: var(--poppins);
         --spacing-container: 1300px;
+        --breakpoint-xs: 425px;
         --color-highlight: #f26440;
         --color-chinese: #171717;
+        --color-myrtle: #286f6c;
+        --color-aqua: #bee3fe;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +22,9 @@
                 --background: #0a0a0a;
                 --foreground: #ededed;
         }
+}
+html.lock {
+        overflow: hidden;
 }
 .wrapper {
         @apply max-w-container px-1 w-full mx-auto;
