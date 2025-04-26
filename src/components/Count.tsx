@@ -29,7 +29,7 @@ const Counter: React.FC<CounterProps> = ({ target, duration = 2000, className })
                 return () => {
                         if (current) observer.unobserve(current)
                 }
-        }, [])
+        })
 
         const startCounting = () => {
                 const startTime = performance.now()

@@ -15,7 +15,8 @@ const Header = () => {
                 }
         }, [])
         useEffect(() => {
-                isOpen ? document.documentElement.classList.add('lock') : document.documentElement.classList.remove('lock')
+                if (isOpen) document.documentElement.classList.add('lock')
+                else document.documentElement.classList.remove('lock')
         }, [isOpen])
         return (
                 <header className={`fixed w-full py-6 top-0 ${scroll && 'bg-aqua'} z-20 max-md:before:absolute before:w-full before:h-full before:bg-aqua before:z-20 before:top-0`}>
