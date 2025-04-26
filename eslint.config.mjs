@@ -20,7 +20,6 @@ const eslintConfig = [
                                                 { char: '>', alternative: '&gt;' },
                                                 { char: '<', alternative: '&lt;' },
                                                 { char: '"', alternative: '&quot;' },
-                                                // Apostrophes are not forbidden anymore
                                         ],
                                 },
                         ],
