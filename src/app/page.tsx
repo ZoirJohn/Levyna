@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Counter from './components/Count'
+import Counter from '../components/Count'
+import building from '../../public/building.png'
 
 export default () => {
         return (
@@ -21,7 +22,7 @@ export default () => {
                                         </Link>
                                 </div>
                         </section>
-                        <section className='mt-25'>
+                        <section className='mt-25 max-md:mt-15'>
                                 <div className='wrapper flex flex-col gap-y-9.5 '>
                                         <div className='flex xl:gap-x-32 gap-x-16 max-lg: items-center max-lg:flex-col'>
                                                 <h2 className='font-semibold basis-1/2'>The best service we offer to you</h2>
@@ -100,6 +101,21 @@ export default () => {
                                                         <Counter target={40} key={12} className='text-highlight font-semibold' />
                                                         <p className='text-nowrap'>Happy Client</p>
                                                 </div>
+                                        </div>
+                                </div>
+                        </section>
+                        <section className='mt-25 max-md:mt-15'>
+                                <div className='wrapper flex items-center gap-12 max-xl:gap-6 max-lg:flex-col max-lg:text-center'>
+                                        <Image src={building} alt='building' className='max-w-132 w-full shrink-0' />
+                                        <div className='pr-19 max-xl:pr-0'>
+                                                <h2 className='font-semibold'>Levyna will provide a pleasant experience in making a house</h2>
+                                                <p className='description mt-5 mb-7.5'>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                                        the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                                </p>
+                                                <Link href='/' className='button'>
+                                                        Consultation with Us
+                                                </Link>
                                         </div>
                                 </div>
                         </section>

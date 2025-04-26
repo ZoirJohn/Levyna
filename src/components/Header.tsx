@@ -56,7 +56,7 @@ const Header = () => {
                                                 </li>
                                         </ul>
                                 </nav>
-                                <Link href='/Service' className='py-4 px-5 bg-highlight text-white font-semibold hover:opacity-90 transition-all max-md:ml-auto z-20 max-xs:py-2 max-xs:px-2.5'>
+                                <Link href='/Service' className='button'>
                                         Consultation
                                 </Link>
                                 <span

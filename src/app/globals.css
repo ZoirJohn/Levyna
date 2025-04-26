@@ -32,6 +32,9 @@ html.lock {
 .description {
         @apply opacity-50 leading-11;
 }
+.button {
+        @apply py-4 px-5 bg-highlight text-white font-semibold hover:opacity-90 transition-all max-md:ml-auto z-20 max-xs:py-2 max-xs:px-2.5 inline-block;
+}
 body {
         color: var(--color-chinese);
         font-size: var(--text-lg);
