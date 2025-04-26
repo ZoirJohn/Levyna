@@ -6,6 +6,8 @@ import bedroom from '../../public/bedroom.png'
 import bed from '../../public/bed.png'
 import living from '../../public/living.png'
 import room from '../../public/room.png'
+import ceo from '../../public/ceo.png'
+import Buttons from '@/components/Buttons'
 
 export default () => {
         return (
@@ -42,8 +44,13 @@ export default () => {
                                                         <p className='opacity-50 mb-7.5 leading-11'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                                         <Link href='/' className='flex gap-x-4 items-center'>
                                                                 Contact Now
-                                                                <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#000'>
-                                                                        <path d='m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z' />
+                                                                <svg className='hidden'>
+                                                                        <symbol id='arrow' viewBox='0 -960 960 960' fill='#000'>
+                                                                                <path d='m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z' />
+                                                                        </symbol>
+                                                                </svg>
+                                                                <svg height='24px' width='24px'>
+                                                                        <use href='#arrow'></use>
                                                                 </svg>
                                                         </Link>
                                                 </div>
@@ -53,8 +60,8 @@ export default () => {
                                                         <p className='opacity-50 mb-7.5 leading-11'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                                         <Link href='/' className='flex gap-x-4 items-center'>
                                                                 Contact Now
-                                                                <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#000'>
-                                                                        <path d='m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z' />
+                                                                <svg height='24px' width='24px'>
+                                                                        <use href='#arrow'></use>
                                                                 </svg>
                                                         </Link>
                                                 </div>
@@ -64,8 +71,8 @@ export default () => {
                                                         <p className='opacity-50 mb-7.5 leading-11'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                                         <Link href='/' className='flex gap-x-4 items-center'>
                                                                 Contact Now
-                                                                <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#000'>
-                                                                        <path d='m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z' />
+                                                                <svg height='24px' width='24px'>
+                                                                        <use href='#arrow'></use>
                                                                 </svg>
                                                         </Link>
                                                 </div>
@@ -75,8 +82,8 @@ export default () => {
                                                         <p className='opacity-50 mb-7.5 leading-11'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                                         <Link href='/' className='flex gap-x-4 items-center'>
                                                                 Contact Now
-                                                                <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#000'>
-                                                                        <path d='m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z' />
+                                                                <svg height='24px' width='24px'>
+                                                                        <use href='#arrow'></use>
                                                                 </svg>
                                                         </Link>
                                                 </div>
@@ -175,6 +182,29 @@ export default () => {
                                                 </div>
                                         </div>
                                 </div>
+                        </section>
+                        <section className='mt-25 max-md:mt-15 bg-myrtle py-19 relative'>
+                                <div className='wrapper flex overflow-x-scroll hidescroll scroll-smooth'>
+                                        <div className='flex gap-12.5 items-center shrink-0 basis-324'>
+                                                <Image src={ceo} alt='ceo' className='shrink-0' />
+                                                <div className='text-white pr-60 shrink-2'>
+                                                        <h4 className='font-semibold'>This is what they say about us</h4>
+                                                        <h3 className='mt-4 mb-12.5'>I really like the result, somehow it's exactly what I expected</h3>
+                                                        <h4>Kim Jhone</h4>
+                                                        <p className='opacity-50'>CEO of levyna</p>
+                                                </div>
+                                        </div>
+                                        <div className='flex gap-12.5 items-center shrink-0 basis-324'>
+                                                <Image src={ceo} alt='ceo' className='shrink-0' />
+                                                <div className='text-white pr-60'>
+                                                        <h4 className='font-semibold'>This is what they say about us</h4>
+                                                        <h3 className='mt-4 mb-12.5'>I really like the result, somehow it's exactly what I expected</h3>
+                                                        <h4>Kim Jhone</h4>
+                                                        <p className='opacity-50'>CEO of levyna</p>
+                                                </div>
+                                        </div>
+                                </div>
+                                <Buttons />
                         </section>
                 </>
         )
