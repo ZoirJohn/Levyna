@@ -32,7 +32,7 @@ const Counter: React.FC<CounterProps> = ({ target, duration = 2000, className })
 
         const startCounting = () => {
                 const startTime = performance.now()
-
+                console.log(startTime);
                 const animate = (time: number) => {
                         const elapsed = time - startTime
                         const progress = Math.min(elapsed / duration, 1)

@@ -2,6 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Counter from '../components/Count'
 import building from '../../public/building.png'
+import bedroom from '../../public/bedroom.png'
+import bed from '../../public/bed.png'
+import living from '../../public/living.png'
+import room from '../../public/room.png'
 
 export default () => {
         return (
@@ -116,6 +120,59 @@ export default () => {
                                                 <Link href='/' className='button'>
                                                         Consultation with Us
                                                 </Link>
+                                        </div>
+                                </div>
+                        </section>
+                        <section className='mt-25 max-md:mt-15'>
+                                <div className='wrapper'>
+                                        <div className='text-center mb-18'>
+                                                <h2 className='font-semibold'>Levyna Blogs </h2>
+                                                <p className='description'>Various updated readings about interior and construction</p>
+                                        </div>
+                                        <div className='grid grid-cols-[repeat(5,1fr)] justify-between xl:items-end items-start gap-4 max-lg:grid-cols-1'>
+                                                <div className='col-start-1 col-end-3 max-lg:col-span-1'>
+                                                        <p className='leading-9 mb-1'>Sunday, 27 Jun 2022</p>
+                                                        <h3 className='font-semibold'>How to choose the right contractor</h3>
+                                                        <p className='description text-sm'>
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                                        </p>
+                                                        <Image src={bedroom} alt='' className='max-w-121 mt-10 w-full' />
+                                                </div>
+                                                <div className='flex flex-col gap-8.75 col-start-3 col-end-6 max-lg:col-span-1 items-center'>
+                                                        <Link href='/' className='flex items-center gap-5 max-xs:max-w-50 max-xs:flex-col'>
+                                                                <Image src={bed} alt='bed' className='min-w-50' />
+                                                                <div>
+                                                                        <p className='text-sm'>Sunday, 27 Jun 2022</p>
+                                                                        <h4 className='font-semibold'>How to choose the right contractor</h4>
+                                                                        <p className='description text-sm !leading-9'>
+                                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                                                                dummy.
+                                                                        </p>
+                                                                </div>
+                                                        </Link>
+                                                        <Link href='/' className='flex items-center gap-5 max-xs:max-w-50 max-xs:flex-col'>
+                                                                <Image src={living} alt='bed' className='min-w-50' />
+                                                                <div>
+                                                                        <p className='text-sm'>Sunday, 27 Jun 2022</p>
+                                                                        <h4 className='font-semibold'>How to choose the right contractor</h4>
+                                                                        <p className='description text-sm !leading-9'>
+                                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                                                                dummy.
+                                                                        </p>
+                                                                </div>
+                                                        </Link>
+                                                        <Link href='/' className='flex items-center gap-5 max-xs:max-w-50 max-xs:flex-col'>
+                                                                <Image src={room} alt='bed' className='min-w-50' />
+                                                                <div>
+                                                                        <p className='text-sm'>Sunday, 27 Jun 2022</p>
+                                                                        <h4 className='font-semibold'>How to choose the right contractor</h4>
+                                                                        <p className='description text-sm !leading-9'>
+                                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                                                                dummy.
+                                                                        </p>
+                                                                </div>
+                                                        </Link>
+                                                </div>
                                         </div>
                                 </div>
                         </section>
