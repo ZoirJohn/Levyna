@@ -13,6 +13,7 @@ const Counter: React.FC<CounterProps> = ({ target, duration = 2000, className })
         const hasAnimated = useRef(false)
 
         useEffect(() => {
+                const current = ref.current
                 const observer = new IntersectionObserver(
                         ([entry]) => {
                                 if (entry.isIntersecting && !hasAnimated.current) {
@@ -23,16 +24,16 @@ const Counter: React.FC<CounterProps> = ({ target, duration = 2000, className })
                         { threshold: 0.5 }
                 )
 
-                if (ref.current) observer.observe(ref.current)
+                if (current) observer.observe(current)
 
                 return () => {
-                        if (ref.current) observer.unobserve(ref.current)
+                        if (current) observer.unobserve(current)
                 }
         }, [])
 
         const startCounting = () => {
                 const startTime = performance.now()
-                console.log(startTime);
+                console.log(startTime)
                 const animate = (time: number) => {
                         const elapsed = time - startTime
                         const progress = Math.min(elapsed / duration, 1)
