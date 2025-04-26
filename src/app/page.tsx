@@ -9,7 +9,7 @@ import room from '../../public/room.png'
 import ceo from '../../public/ceo.png'
 import Buttons from '@/components/Buttons'
 
-export default () => {
+const Home = () => {
         return (
                 <>
                         <section className='bg-[url(/bg.png)] bg-no-repeat bg-cover bg-right pt-30 h-180 max-md:before:absolute before:w-full before:h-full before:bg-white before:top-26 before:opacity-70 before:z-0 max-xs:before:top-21 relative overflow-hidden'>
@@ -219,3 +219,5 @@ export default () => {
                 </>
         )
 }
+
+export default Home
