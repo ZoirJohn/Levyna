@@ -184,19 +184,19 @@ export default () => {
                                 </div>
                         </section>
                         <section className='mt-25 max-md:mt-15 bg-myrtle py-19 relative'>
-                                <div className='wrapper flex overflow-x-scroll hidescroll scroll-smooth'>
-                                        <div className='flex gap-12.5 items-center shrink-0 basis-324'>
+                                <div className='wrapper flex overflow-x-scroll hidescroll scroll-smooth gap-1'>
+                                        <div className='flex gap-12.5 items-center shrink-0 max-w-[1300px] w-full max-lg:gap-6 max-md:flex-col'>
                                                 <Image src={ceo} alt='ceo' className='shrink-0' />
-                                                <div className='text-white pr-60 shrink-2'>
+                                                <div className='text-white pr-60 shrink-2 max-lg:pr-10 max-md:text-center max-md:pr-0'>
                                                         <h4 className='font-semibold'>This is what they say about us</h4>
                                                         <h3 className='mt-4 mb-12.5'>I really like the result, somehow it's exactly what I expected</h3>
                                                         <h4>Kim Jhone</h4>
                                                         <p className='opacity-50'>CEO of levyna</p>
                                                 </div>
                                         </div>
-                                        <div className='flex gap-12.5 items-center shrink-0 basis-324'>
+                                        <div className='flex gap-12.5 items-center shrink-0 max-w-[1300px] w-full max-lg:gap-6 max-md:flex-col'>
                                                 <Image src={ceo} alt='ceo' className='shrink-0' />
-                                                <div className='text-white pr-60'>
+                                                <div className='text-white pr-60 shrink-2 max-lg:pr-10 max-md:text-center max-md:pr-0'>
                                                         <h4 className='font-semibold'>This is what they say about us</h4>
                                                         <h3 className='mt-4 mb-12.5'>I really like the result, somehow it's exactly what I expected</h3>
                                                         <h4>Kim Jhone</h4>
@@ -205,6 +205,16 @@ export default () => {
                                         </div>
                                 </div>
                                 <Buttons />
+                        </section>
+                        <section className='bg-chinese text-white'>
+                                <div className='flex flex-col items-center py-29.5 text-center max-sm:py-15'>
+                                        <h2>Subscribe to get notified about update</h2>
+                                        <p className='description text-base'>By subscribing with your mail, you will accept our privacy policy</p>
+                                        <label htmlFor='' className='flex gap-4 mt-12.5 max-sm:flex-col items-center'>
+                                                <input type='text' name='' id='' placeholder='Enter your email' className='bg-[#ffffff14] px-7.5 py-1 w-95 rounded-sm max-sm:w-60 leading-12.5' />
+                                                <button className='button text-nowrap !ml-0'>Subscribe us</button>
+                                        </label>
+                                </div>
                         </section>
                 </>
         )

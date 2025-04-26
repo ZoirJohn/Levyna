@@ -2,7 +2,7 @@
 
 const Buttons = () => {
         return (
-                <div className='absolute top-3/4 left-144 flex'>
+                <div className='absolute top-3/4 left-144 flex max-md:left-1/2 max-md:top-4/5 max-md:-translate-x-1/2'>
                         <button
                                 onClick={(e) => {
                                         e.target.addEventListener('click', () => {
