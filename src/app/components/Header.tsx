@@ -10,6 +10,9 @@ const Header = () => {
         const [isOpen, setIsOpen] = useState<boolean>(false)
         useEffect(() => {
                 window.addEventListener('scroll', () => setScroll(window.scrollY > 30))
+                if (window.scrollY > 30) {
+                        setScroll(true)
+                }
         }, [])
         useEffect(() => {
                 isOpen ? document.documentElement.classList.add('lock') : document.documentElement.classList.remove('lock')

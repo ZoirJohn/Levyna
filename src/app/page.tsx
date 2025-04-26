@@ -23,14 +23,14 @@ export default () => {
                         </section>
                         <section className='mt-25'>
                                 <div className='wrapper flex flex-col gap-y-9.5 '>
-                                        <div className='flex xl:gap-x-32 gap-x-16 max-lg: items-center'>
+                                        <div className='flex xl:gap-x-32 gap-x-16 max-lg: items-center max-lg:flex-col'>
                                                 <h2 className='font-semibold basis-1/2'>The best service we offer to you</h2>
-                                                <p className='basis-1/2 shrink-0 description'>
+                                                <p className='basis-1/2 shrink-0 description max-lg:text-center'>
                                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
                                                         the 1500s,
                                                 </p>
                                         </div>
-                                        <div className='flex justify-between group transition-all text-sm'>
+                                        <div className='flex justify-between group transition-all text-sm flex-wrap gap-10 max-lg:justify-center'>
                                                 <div className='hover:scale-110 transition-all cursor-pointer basis-77.5 w-full'>
                                                         <Image src='/card1.png' alt='cardImage' width={309} height={406} className='mb-5' />
                                                         <h4 className='font-semibold mb-1'>Choose Interior</h4>
@@ -78,27 +78,27 @@ export default () => {
                                         </div>
                                 </div>
                         </section>
-                        <section className='mt-25 bg-myrtle'>
-                                <div className='wrapper py-16 text-white flex items-center gap-x-12.5'>
-                                        <div className='max-w-106'>
-                                                <h3 className='font-semibold'>How much have we accomplished ?</h3>
+                        <section className='mt-25 bg-myrtle max-md:mt-15'>
+                                <div className='wrapper py-16 text-white flex items-center gap-12.5 max-lg:flex-col'>
+                                        <div className='max-w-106 max-lg:max-w-full'>
+                                                <h3 className='font-semibold text-center'>How much have we accomplished ?</h3>
                                         </div>
-                                        <div className='flex gap-x-17'>
+                                        <div className='flex gap-17 max-lg:gap-7 flex-wrap justify-center max-xs:flex-col'>
                                                 <div>
                                                         <Counter target={36} key={12} className='text-highlight font-semibold' />
-                                                        <p>Project Complete</p>
+                                                        <p className='text-nowrap'>Project Complete</p>
                                                 </div>
                                                 <div>
                                                         <Counter target={25} key={12} className='text-highlight font-semibold' />
-                                                        <p>Different Cities</p>
+                                                        <p className='text-nowrap'>Different Cities</p>
                                                 </div>
                                                 <div>
                                                         <Counter target={10} key={12} className='text-highlight font-semibold' />
-                                                        <p>Contractor Award</p>
+                                                        <p className='text-nowrap'>Contractor Award</p>
                                                 </div>
                                                 <div>
                                                         <Counter target={40} key={12} className='text-highlight font-semibold' />
-                                                        <p>Happy Client</p>
+                                                        <p className='text-nowrap'>Happy Client</p>
                                                 </div>
                                         </div>
                                 </div>
